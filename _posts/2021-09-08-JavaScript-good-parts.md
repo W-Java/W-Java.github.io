@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "JavaScript 语言精粹笔记2-继承、数组、正则表达式"
+title:  "JavaScript 语言精粹笔记-继承、数组、正则表达式"
 categories: JavaScript
 tags:  继承 对象 原型 Array 正则
 ---
@@ -8,7 +8,7 @@ tags:  继承 对象 原型 Array 正则
 * content
 {:toc}
 
-记录一下阅读蝴蝶书的笔记，本篇为书中以下章节的笔记：继承、数组和正则表达式。
+
 
 
 
@@ -207,13 +207,3 @@ var matrix = [
 ]
 console.log(matrix[1][2]) //6
 ```
-
-## 正则表达式
-
-关于正则表达式，以前的博文写的比较多了，详情见：
-
-[百度Web前端技术学院(2)-JavaScript 基础 之正则表达式部分1](http://gaohaoyang.github.io/2015/04/22/baidu-ife-2-javascript/#section-10)
-
-[百度Web前端技术学院(2)-JavaScript 基础 之正则表达式部分2](http://gaohaoyang.github.io/2015/04/22/baidu-ife-2-javascript/#section-12)
-
-[浅谈正则表达式中的分组和引用](http://gaohaoyang.github.io/2016/05/06/regular-expression-group/)
