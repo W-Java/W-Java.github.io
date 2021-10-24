@@ -1,6 +1,6 @@
 ## Welcome to JavaW's Pages
 
-
+![img_JavaW](https://github.com/W-Java/W-Java.github.io/blob/main/img/JavaW.svg)
 
 ### How to use?
 
