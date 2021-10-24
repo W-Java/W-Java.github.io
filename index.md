@@ -1,6 +1,6 @@
 ## Welcome to JavaW's Pages
 
-![img_JavaW](https://github.com/W-Java/W-Java.github.io/blob/main/img/JavaW.svg)
+![img_JavaW](img/JavaW.svg)
 
 ### How to use?
 
@@ -17,11 +17,32 @@
 (function() {
 var demoItems = document.querySelectorAll('.grid-item')
 }());
+
+
+// eg: the html code in this area
+<div class="side ">
+  <div>
+    <i class="fa fa-th-list"></i>
+    Categories
+  </div>
+  <ul class="content-ul" cate>
+    {% for category in site.categories %}
+    <li>
+      <a href="{{ root_url }}/{{ site.category_dir }}#{{ category | first }}" class="categories-list-item" cate="{{ category | first }}">
+        <span class="name">
+          {{ category | first }}
+        </span>
+        <span class="badge">{{ category | last | size }}</span>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
 ```
 
 
 
 ### Support or Contact
 
-See my GitHub for more project source code (https://guides.github.com/w-java).
+See my GitHub for more project source code in [JavaW](https://guides.github.com/w-java).
 
