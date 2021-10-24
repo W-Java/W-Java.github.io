@@ -1,6 +1,6 @@
 ## Welcome to JavaW's Pages
 
-![img_JavaW](img/JavaW.svg)
+![img_JavaW](img/JavaW.png)
 
 ### How to use?
 
