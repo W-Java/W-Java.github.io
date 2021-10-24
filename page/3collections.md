@@ -45,173 +45,207 @@ type: page
 - [google fonts](https://fonts.google.com/)
   - [Google Fonts 加速代理](https://fengmk2.com/blog/2016/google-fonts-mirror)
 
-## 编程语言
+[comment]: <> (## 编程语言)
 
-### JavaScript
+[comment]: <> (### JavaScript)
 
-* [JavaScript 标准参考教程（alpha） -阮一峰](http://javascript.ruanyifeng.com/)
+[comment]: <> (* [JavaScript 标准参考教程（alpha） -阮一峰]&#40;http://javascript.ruanyifeng.com/&#41;)
 
-* [JavaScript Promise迷你书 -azu](http://liubin.org/promises-book/)
+[comment]: <> (* [JavaScript Promise迷你书 -azu]&#40;http://liubin.org/promises-book/&#41;)
 
-* [You Don't Know JS (book series)](https://github.com/getify/You-Dont-Know-JS)
+[comment]: <> (* [You Don't Know JS &#40;book series&#41;]&#40;https://github.com/getify/You-Dont-Know-JS&#41;)
 
-* [You Don't Need jQuery](https://github.com/oneuijs/You-Dont-Need-jQuery/blob/master/README.zh-CN.md)
+[comment]: <> (* [You Don't Need jQuery]&#40;https://github.com/oneuijs/You-Dont-Need-jQuery/blob/master/README.zh-CN.md&#41;)
 
-    前端发展很快，现代浏览器原生 API 已经足够好用。我们并不需要为了操作 DOM、Event 等再学习一下 jQuery 的 API。同时由于 React、Angular、Vue 等框架的流行，直接操作 DOM 不再是好的模式，jQuery 使用场景大大减少。本项目总结了大部分 jQuery API 替代的方法，暂时只支持 IE10+ 以上浏览器。
+[comment]: <> (    前端发展很快，现代浏览器原生 API 已经足够好用。我们并不需要为了操作 DOM、Event 等再学习一下 jQuery 的 API。同时由于 React、Angular、Vue 等框架的流行，直接操作 DOM 不再是好的模式，jQuery 使用场景大大减少。本项目总结了大部分 jQuery API 替代的方法，暂时只支持 IE10+ 以上浏览器。)
 
-- [YOU MIGHT NOT NEED JQUERY PLUGINS](http://youmightnotneedjqueryplugins.com/)
+[comment]: <> (- [YOU MIGHT NOT NEED JQUERY PLUGINS]&#40;http://youmightnotneedjqueryplugins.com/&#41;)
 
-* [JavaScript 秘密花园](http://bonsaiden.github.io/JavaScript-Garden/zh/)
+[comment]: <> (* [JavaScript 秘密花园]&#40;http://bonsaiden.github.io/JavaScript-Garden/zh/&#41;)
 
-* [JavaScript 设计模式 系列 AlloyTeam](http://www.alloyteam.com/2012/10/common-javascript-design-patterns/)
+[comment]: <> (* [JavaScript 设计模式 系列 AlloyTeam]&#40;http://www.alloyteam.com/2012/10/common-javascript-design-patterns/&#41;)
 
-### ES2015
+[comment]: <> (### ES2015)
 
-- [https://tc39.github.io/ecma262/](https://tc39.github.io/ecma262/)
-* [http://www.ecma-international.org/ecma-262/6.0/](http://www.ecma-international.org/ecma-262/6.0/)
+[comment]: <> (- [https://tc39.github.io/ecma262/]&#40;https://tc39.github.io/ecma262/&#41;)
 
-    ES2015规范
+[comment]: <> (* [http://www.ecma-international.org/ecma-262/6.0/]&#40;http://www.ecma-international.org/ecma-262/6.0/&#41;)
 
-- [http://es6katas.org/](http://es6katas.org/)
+[comment]: <> (    ES2015规范)
 
-    Learn ES6 by doing it. Fix failing tests. Keep all learnings.
+[comment]: <> (- [http://es6katas.org/]&#40;http://es6katas.org/&#41;)
 
-* [30分钟掌握ES6/ES2015核心内容（上）](http://segmentfault.com/a/1190000004365693)
+[comment]: <> (    Learn ES6 by doing it. Fix failing tests. Keep all learnings.)
 
-* [30分钟掌握ES6/ES2015核心内容（下）](http://segmentfault.com/a/1190000004368132)
+[comment]: <> (* [30分钟掌握ES6/ES2015核心内容（上）]&#40;http://segmentfault.com/a/1190000004365693&#41;)
 
-* [《ECMAScript 6入门》 -阮一峰](https://github.com/ruanyf/es6tutorial)
+[comment]: <> (* [30分钟掌握ES6/ES2015核心内容（下）]&#40;http://segmentfault.com/a/1190000004368132&#41;)
 
-* [EcmaScript6 全规范（含node） -ouvens](https://github.com/ouvens/es6-code-style-guide)
+[comment]: <> (* [《ECMAScript 6入门》 -阮一峰]&#40;https://github.com/ruanyf/es6tutorial&#41;)
 
-### NodeJS
+[comment]: <> (* [EcmaScript6 全规范（含node） -ouvens]&#40;https://github.com/ouvens/es6-code-style-guide&#41;)
 
-* [七天学会NodeJS -Nanqiao Deng](https://nqdeng.github.io/7-days-nodejs)
+[comment]: <> (### NodeJS)
 
-## 框架&脚手架
+[comment]: <> (* [七天学会NodeJS -Nanqiao Deng]&#40;https://nqdeng.github.io/7-days-nodejs&#41;)
 
-### webpack
+[comment]: <> (## 框架&脚手架)
 
-* [Webpack 中文指南 -赵达](https://www.gitbook.com/book/zhaoda/webpack/details)
+[comment]: <> (### webpack)
 
-* [Webpack傻瓜式指南（一） -前端外刊评论 知乎专栏](http://zhuanlan.zhihu.com/FrontendMagazine/20367175)
+[comment]: <> (* [Webpack 中文指南 -赵达]&#40;https://www.gitbook.com/book/zhaoda/webpack/details&#41;)
 
-* [Webpack傻瓜指南（二）开发和部署技巧 -前端外刊评论 知乎专栏](http://zhuanlan.zhihu.com/FrontendMagazine/20397902)
+[comment]: <> (* [Webpack傻瓜式指南（一） -前端外刊评论 知乎专栏]&#40;http://zhuanlan.zhihu.com/FrontendMagazine/20367175&#41;)
 
-* [Webpack傻瓜指南（三）和React配合开发 -前端外刊评论 知乎专栏](http://zhuanlan.zhihu.com/FrontendMagazine/20522487)
+[comment]: <> (* [Webpack傻瓜指南（二）开发和部署技巧 -前端外刊评论 知乎专栏]&#40;http://zhuanlan.zhihu.com/FrontendMagazine/20397902&#41;)
 
-    上述傻瓜指南的原始出处 [https://github.com/vikingmute/webpack-for-fools](https://github.com/vikingmute/webpack-for-fools) Webpack傻瓜式指南
+[comment]: <> (* [Webpack傻瓜指南（三）和React配合开发 -前端外刊评论 知乎专栏]&#40;http://zhuanlan.zhihu.com/FrontendMagazine/20522487&#41;)
 
-* [Webpack，101入门体验 -Yika](http://www.html-js.com/article/3009)
+[comment]: <> (    上述傻瓜指南的原始出处 [https://github.com/vikingmute/webpack-for-fools]&#40;https://github.com/vikingmute/webpack-for-fools&#41; Webpack傻瓜式指南)
 
-* [Webpack 入门指迷 -题叶](https://segmentfault.com/a/1190000002551952)
+[comment]: <> (* [Webpack，101入门体验 -Yika]&#40;http://www.html-js.com/article/3009&#41;)
 
-* [https://webpack.github.io/ Webpack 官网](https://webpack.github.io/)
+[comment]: <> (* [Webpack 入门指迷 -题叶]&#40;https://segmentfault.com/a/1190000002551952&#41;)
 
+[comment]: <> (* [https://webpack.github.io/ Webpack 官网]&#40;https://webpack.github.io/&#41;)
 
-### Vue
 
-* [awesome-vue](https://github.com/vuejs/awesome-vue)
-* [Vue.js 和 Webpack（一） -Randy Lu](http://djyde.github.io/2015/08/29/vuejs-and-webpack-1/)
-* [Vue.js 和 Webpack（二） -Randy Lu](http://djyde.github.io/2015/08/30/vuejs-and-webpack-2/)
-* [Vue.js 和 Webpack（三） -Randy Lu](http://djyde.github.io/2015/08/31/vuejs-and-webpack-3/)
-* [Vuejs 1.0 中文系列视频教程 -Laravist](https://laravist.com/series/vue-js-1-0-in-action-series)
-* [Vuejs-QQ群 相关资料](https://github.com/jsfront/src/blob/master/vuejs.md) 来自豪情
+[comment]: <> (### Vue)
 
+[comment]: <> (* [awesome-vue]&#40;https://github.com/vuejs/awesome-vue&#41;)
 
-### React
+[comment]: <> (* [Vue.js 和 Webpack（一） -Randy Lu]&#40;http://djyde.github.io/2015/08/29/vuejs-and-webpack-1/&#41;)
 
-* [深入理解 React -Thinking in React 中文版](http://reactjs.cn/react/docs/thinking-in-react.html)
-* [Thinking in React](http://facebook.github.io/react/docs/thinking-in-react.html)
+[comment]: <> (* [Vue.js 和 Webpack（二） -Randy Lu]&#40;http://djyde.github.io/2015/08/30/vuejs-and-webpack-2/&#41;)
 
-### AngularJS
+[comment]: <> (* [Vue.js 和 Webpack（三） -Randy Lu]&#40;http://djyde.github.io/2015/08/31/vuejs-and-webpack-3/&#41;)
 
-- [学习AngularJS 1.x -Harry<harry@andtoo.net>](https://hairui219.gitbooks.io/learning_angular/content/zh/index.html)
+[comment]: <> (* [Vuejs 1.0 中文系列视频教程 -Laravist]&#40;https://laravist.com/series/vue-js-1-0-in-action-series&#41;)
 
-    本书是作者 [Harry](https://github.com/hairui219) 在学习和应用AngularJS 1.x 的过程中的资料梳理。希望能对大家学习AngularJS有一定帮助……
+[comment]: <> (* [Vuejs-QQ群 相关资料]&#40;https://github.com/jsfront/src/blob/master/vuejs.md&#41; 来自豪情)
 
-* [AngularJS api 官网](https://docs.angularjs.org/api)
 
-* [AngularJS入门教程——AngularJS中文社区提供](https://github.com/zensh/AngularjsTutorial_cn)
+[comment]: <> (### React)
 
-* [AngularJS 教程 \| 菜鸟教程](http://www.runoob.com/angularjs/angularjs-tutorial.html)
+[comment]: <> (* [深入理解 React -Thinking in React 中文版]&#40;http://reactjs.cn/react/docs/thinking-in-react.html&#41;)
 
-    类似 w3school 的入门 AngularJS 教程。
+[comment]: <> (* [Thinking in React]&#40;http://facebook.github.io/react/docs/thinking-in-react.html&#41;)
 
-### 测试
+[comment]: <> (### AngularJS)
 
-* [测试框架 Mocha 实例教程 阮一峰](http://www.ruanyifeng.com/blog/2015/12/a-mocha-tutorial-of-examples.html)
+[comment]: <> (- [学习AngularJS 1.x -Harry<harry@andtoo.net>]&#40;https://hairui219.gitbooks.io/learning_angular/content/zh/index.html&#41;)
 
-## 类库与插件
+[comment]: <> (    本书是作者 [Harry]&#40;https://github.com/hairui219&#41; 在学习和应用AngularJS 1.x 的过程中的资料梳理。希望能对大家学习AngularJS有一定帮助……)
 
-* [Masonry](http://masonry.desandro.com/)
+[comment]: <> (* [AngularJS api 官网]&#40;https://docs.angularjs.org/api&#41;)
 
-    瀑布流布局库。
+[comment]: <> (* [AngularJS入门教程——AngularJS中文社区提供]&#40;https://github.com/zensh/AngularjsTutorial_cn&#41;)
 
-* [jssor](http://www.jssor.com/)
+[comment]: <> (* [AngularJS 教程 \| 菜鸟教程]&#40;http://www.runoob.com/angularjs/angularjs-tutorial.html&#41;)
 
-    图片轮播图其 GitHub 地址 [jssor/slider](https://github.com/jssor/slider)
+[comment]: <> (    类似 w3school 的入门 AngularJS 教程。)
 
-* [cssslider](http://cssslider.com/)
+[comment]: <> (### 测试)
 
-    纯 CSS 的图片轮播图。
+[comment]: <> (* [测试框架 Mocha 实例教程 阮一峰]&#40;http://www.ruanyifeng.com/blog/2015/12/a-mocha-tutorial-of-examples.html&#41;)
 
-- [gumshoe](https://github.com/cferdinandi/gumshoe)
+[comment]: <> (## 类库与插件)
 
-    A simple, framework-agnostic scrollspy script.
+[comment]: <> (* [Masonry]&#40;http://masonry.desandro.com/&#41;)
 
-- [smooth-scroll](https://github.com/cferdinandi/smooth-scroll)
+[comment]: <> (    瀑布流布局库。)
 
-  A simple vanilla JS script to animate scrolling to anchor links.
+[comment]: <> (* [jssor]&#40;http://www.jssor.com/&#41;)
 
-## 模块化
+[comment]: <> (    图片轮播图其 GitHub 地址 [jssor/slider]&#40;https://github.com/jssor/slider&#41;)
 
-* [后端程序员的 JavaScript 之旅 - 模块化（一）](http://lishaopeng.com/2016/02/05/js-module/)
-* [后端程序员的 JavaScript 之旅 - 模块化（二）](http://lishaopeng.com/2016/02/11/js-module2/)
-* [后端程序员的 JavaScript 之旅 - 模块化（三）](http://lishaopeng.com/2016/02/19/js-module3/)
+[comment]: <> (* [cssslider]&#40;http://cssslider.com/&#41;)
 
-* [CommonJS 规范 -来自 阮一峰 JavaScript 标准参考教程(alpha)](http://javascript.ruanyifeng.com/nodejs/module.html)
+[comment]: <> (    纯 CSS 的图片轮播图。)
 
-## other articles
+[comment]: <> (- [gumshoe]&#40;https://github.com/cferdinandi/gumshoe&#41;)
 
-- [<head> Cheat Sheet](http://gethead.info/)
-* [将footer固定在页面底部的实现方法](https://segmentfault.com/a/1190000004453249)
-- [HTML5 视频 By Pete LePage](https://www.html5rocks.com/zh/tutorials/video/basics/)
+[comment]: <> (    A simple, framework-agnostic scrollspy script.)
 
-## 编辑器
+[comment]: <> (- [smooth-scroll]&#40;https://github.com/cferdinandi/smooth-scroll&#41;)
 
-### Atom 中常用插件
+[comment]: <> (  A simple vanilla JS script to animate scrolling to anchor links.)
 
-* auto-beautify
-* autoprefixer
-* block-comment
-* color-picker
-* docblockr
-* emmet
-* jquery-snippets
-* jshint
-* linter
-* linter-csslint
-* linter-htmlhint
-* minimap
-* minimap-git-diff
-* minimap-codeglance 滑过 minimap 显示代码
-* minimap-find-and-replace 在 minimap 中显示 `ctrl+D` 选中的内容
-* open-in-browser
-* uglify
-* active-power-mode
-* atom-terminal-panel
-* linter-scss-linter
-* atom-ternjs
-* file-icons 将图标变成彩色
-* autocomplete-paths 自动补充路径
-* symbols-tree-view A symbol treeview like taglist
+[comment]: <> (## 模块化)
 
-常用的主题：
+[comment]: <> (* [后端程序员的 JavaScript 之旅 - 模块化（一）]&#40;http://lishaopeng.com/2016/02/05/js-module/&#41;)
 
-UI Theme: One Dark
+[comment]: <> (* [后端程序员的 JavaScript 之旅 - 模块化（二）]&#40;http://lishaopeng.com/2016/02/11/js-module2/&#41;)
 
-Syntax Theme: Atom Dark or One Dark
+[comment]: <> (* [后端程序员的 JavaScript 之旅 - 模块化（三）]&#40;http://lishaopeng.com/2016/02/19/js-module3/&#41;)
+
+[comment]: <> (* [CommonJS 规范 -来自 阮一峰 JavaScript 标准参考教程&#40;alpha&#41;]&#40;http://javascript.ruanyifeng.com/nodejs/module.html&#41;)
+
+[comment]: <> (## other articles)
+
+[comment]: <> (- [<head> Cheat Sheet]&#40;http://gethead.info/&#41;)
+
+[comment]: <> (* [将footer固定在页面底部的实现方法]&#40;https://segmentfault.com/a/1190000004453249&#41;)
+
+[comment]: <> (- [HTML5 视频 By Pete LePage]&#40;https://www.html5rocks.com/zh/tutorials/video/basics/&#41;)
+
+[comment]: <> (## 编辑器)
+
+[comment]: <> (### Atom 中常用插件)
+
+[comment]: <> (* auto-beautify)
+
+[comment]: <> (* autoprefixer)
+
+[comment]: <> (* block-comment)
+
+[comment]: <> (* color-picker)
+
+[comment]: <> (* docblockr)
+
+[comment]: <> (* emmet)
+
+[comment]: <> (* jquery-snippets)
+
+[comment]: <> (* jshint)
+
+[comment]: <> (* linter)
+
+[comment]: <> (* linter-csslint)
+
+[comment]: <> (* linter-htmlhint)
+
+[comment]: <> (* minimap)
+
+[comment]: <> (* minimap-git-diff)
+
+[comment]: <> (* minimap-codeglance 滑过 minimap 显示代码)
+
+[comment]: <> (* minimap-find-and-replace 在 minimap 中显示 `ctrl+D` 选中的内容)
+
+[comment]: <> (* open-in-browser)
+
+[comment]: <> (* uglify)
+
+[comment]: <> (* active-power-mode)
+
+[comment]: <> (* atom-terminal-panel)
+
+[comment]: <> (* linter-scss-linter)
+
+[comment]: <> (* atom-ternjs)
+
+[comment]: <> (* file-icons 将图标变成彩色)
+
+[comment]: <> (* autocomplete-paths 自动补充路径)
+
+[comment]: <> (* symbols-tree-view A symbol treeview like taglist)
+
+[comment]: <> (常用的主题：)
+
+[comment]: <> (UI Theme: One Dark)
+
+[comment]: <> (Syntax Theme: Atom Dark or One Dark)
 
 ## GitBook 及其插件
 
@@ -234,43 +268,43 @@ Syntax Theme: Atom Dark or One Dark
 
     新建 tab 时，显示 dribbble 上的精选作品。
 
-## Other blogs
+[comment]: <> (## Other blogs)
 
-- [COLORFUL xiaoa](http://www.xiaoa.name/)
+[comment]: <> (- [COLORFUL xiaoa]&#40;http://www.xiaoa.name/&#41;)
 
-* [进击的马斯特 http://pinkyjie.com/](http://pinkyjie.com/)
+[comment]: <> (* [进击的马斯特 http://pinkyjie.com/]&#40;http://pinkyjie.com/&#41;)
 
-    马斯特，87年生人，爱溜冰的码农。技术： Javascript、Python、Mac、iOS
+[comment]: <> (    马斯特，87年生人，爱溜冰的码农。技术： Javascript、Python、Mac、iOS)
 
-* [Jerry Qu](https://imququ.com/)
+[comment]: <> (* [Jerry Qu]&#40;https://imququ.com/&#41;)
 
-    JerryQu，奇虎 360，前端开发，前百度前端。
+[comment]: <> (    JerryQu，奇虎 360，前端开发，前百度前端。)
 
-* [码志 https://mazhuang.org/](https://mazhuang.org/)
+[comment]: <> (* [码志 https://mazhuang.org/]&#40;https://mazhuang.org/&#41;)
 
-    我是马壮，码而生，码而立。就职sogou。
+[comment]: <> (    我是马壮，码而生，码而立。就职sogou。)
 
-* [小胡子哥 http://www.barretlee.com/](http://www.barretlee.com/)
+[comment]: <> (* [小胡子哥 http://www.barretlee.com/]&#40;http://www.barretlee.com/&#41;)
 
-    李靖，阿里巴巴。
+[comment]: <> (    李靖，阿里巴巴。)
 
-* [Xcat Liu http://blog.xcatliu.com/](http://blog.xcatliu.com/)
+[comment]: <> (* [Xcat Liu http://blog.xcatliu.com/]&#40;http://blog.xcatliu.com/&#41;)
 
-    Microsoft Software Engineer II, Meituan Senior Front-End Engineer
+[comment]: <> (    Microsoft Software Engineer II, Meituan Senior Front-End Engineer)
 
-* [极限前端 http://ouvens.github.io/](http://ouvens.github.io/)
+[comment]: <> (* [极限前端 http://ouvens.github.io/]&#40;http://ouvens.github.io/&#41;)
 
-    Ouvenzhang, 前端工程师，对前端领域的技术知识具有较高的职业能力和探究精神。对响应式页面设计、工程构建组件化、mv*设计实现、前端优化、ES6开发体系等有深入的研究与项目实践。来自腾讯科技。
+[comment]: <> (    Ouvenzhang, 前端工程师，对前端领域的技术知识具有较高的职业能力和探究精神。对响应式页面设计、工程构建组件化、mv*设计实现、前端优化、ES6开发体系等有深入的研究与项目实践。来自腾讯科技。)
 
-* [凳子_Joinery 邓智容  http://www.dengzhr.com/](http://www.dengzhr.com/)
+[comment]: <> (* [凳子_Joinery 邓智容  http://www.dengzhr.com/]&#40;http://www.dengzhr.com/&#41;)
 
-* [赵达的个人网站 腾讯高级前端开发工程师](http://zhaoda.net/)
+[comment]: <> (* [赵达的个人网站 腾讯高级前端开发工程师]&#40;http://zhaoda.net/&#41;)
 
-* [Randy](http://djyde.github.io/)
+[comment]: <> (* [Randy]&#40;http://djyde.github.io/&#41;)
 
-    95年出生的全栈。卢涛南，英文名 Randy，用 djyde 这个ID混迹于网络。
+[comment]: <> (    95年出生的全栈。卢涛南，英文名 Randy，用 djyde 这个ID混迹于网络。)
 
-* [JS前端开发群月报 -豪情等人维护](http://www.kancloud.cn/jsfront/month/82796)
+[comment]: <> (* [JS前端开发群月报 -豪情等人维护]&#40;http://www.kancloud.cn/jsfront/month/82796&#41;)
 
 ## 交互设计相关
 
