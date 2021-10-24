@@ -26,16 +26,13 @@ var demoItems = document.querySelectorAll('.grid-item')
     Categories
   </div>
   <ul class="content-ul" cate>
-    {% for category in site.categories %}
     <li>
       <a href="{{ root_url }}/{{ site.category_dir }}#{{ category | first }}" class="categories-list-item" cate="{{ category | first }}">
         <span class="name">
-          {{ category | first }}
         </span>
         <span class="badge">{{ category | last | size }}</span>
       </a>
     </li>
-    {% endfor %}
   </ul>
 </div>
 ```
