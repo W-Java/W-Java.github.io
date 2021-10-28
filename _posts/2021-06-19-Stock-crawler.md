@@ -1,3 +1,15 @@
+---
+layout: post
+title:  "股票爬虫项目总结"
+categories: Python
+tags:  实战
+---
+
+* content
+{:toc}
+
+
+
 # 这是一个股票爬虫的python项目
 
 ### [项目源代码](https://github.com/W-Java/Stock-crawler)
