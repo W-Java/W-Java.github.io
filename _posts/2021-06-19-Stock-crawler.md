@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "股票爬虫项目总结"
-categories: Python
-tags:  实战
+categories: Python mysql
+tags:  实战 总结
 ---
 
 * content
