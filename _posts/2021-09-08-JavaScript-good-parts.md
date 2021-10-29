@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "JavaScript总结 - 继承,数组,正则表达式"
+title:  "【个人总结】JavaScript总结 - 继承,数组,正则表达式"
 categories: JavaScript
 tags:  总结
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "人口预测项目总结"
+title:  "【项目总结】人口预测项目总结"
 categories: python juputer
 tags:  实战 SVM 机器学习
 ---
