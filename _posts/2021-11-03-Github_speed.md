@@ -88,8 +88,6 @@ clone速度缓慢？代码push不上去？Github登不上去？
 
 
 
-[P1009 阶乘之和](https://www.luogu.com.cn/problem/P1009)
-
 ### 笔者听过的
 
 #### 用proxychains透明代理
