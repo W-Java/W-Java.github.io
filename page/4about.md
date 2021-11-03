@@ -11,7 +11,6 @@ type: page
 
 ## 关于我
 
-<iframe src="https://githubbadge.appspot.com/gaohaoyang?s=1" style="border: 0;height: 142px;width: 200px;overflow: hidden;" frameBorder="0"></iframe>
 
 主要兴趣集中在Java后端开发。将更多的业务逻辑放在后端中，这很有趣。
 
@@ -29,12 +28,14 @@ type: page
 
 * GitHub：[W-Java](https://github.com/W-Java)
 * email：1140480798@qq.com
+* QQ: 1140480798
+* WeChat: WJava_
 
 
 ## 关于本站
 
 
-欢迎大家提一些对本站主题的建议，可以直接在下面留言或者新建一个 [Issue](https://github.com/W_Java/w-java.github.io/issues)。
+欢迎大家提一些对本站主题的建议，可以直接在下面留言或者新建一个 [Issue](https://github.com/W-Java/W-Java.github.io/issues)。
 
 
 
