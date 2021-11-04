@@ -41,7 +41,7 @@ tags:  实战 总结
 ```
 代码运行结果为：
 
-[img1]()
+![img1](http://www.cywjw99.com/img_el/1.svg)
 
 * flex布局 便于控制布局（通过justify控制对应位置）
 
@@ -77,17 +77,17 @@ tags:  实战 总结
 
 代码运行结果为：
 
-[img2]()
+![img2](http://www.cywjw99.com/img_el/2.svg)
 
 ### el-row和el-col对应参数及含义
 
 * el-row
 
-[img3]()
+![img3](http://www.cywjw99.com/img_el/3.svg)
 
 * el-col
 
-[img4]()
+![img4](http://www.cywjw99.com/img_el/4.svg)
 
 ## （二）Container布局
 
@@ -215,25 +215,25 @@ el-footer：底栏容器。
 
 代码运行结果：
 
-[img5]()
+![img5](http://www.cywjw99.com/img_el/5.svg)
 
 ### 对应参数
 
 #### Container
 
-[img5]()
+![img6](http://www.cywjw99.com/img_el/6.svg)
 
 #### Header
 
-[img6]()
+![img7](http://www.cywjw99.com/img_el/7.svg)
 
 #### Aside
 
-[img7]()
+![img8](http://www.cywjw99.com/img_el/8.svg)
 
 #### Footer
 
-[img8]()
+![img9](http://www.cywjw99.com/img_el/9.svg)
 
 ## （三）Button按钮
 
@@ -272,7 +272,7 @@ el-footer：底栏容器。
 
 代码运行结果：
 
-[img10]()
+![img10](http://www.cywjw99.com/img_el/10.svg)
 
 
 
@@ -294,7 +294,7 @@ el-footer：底栏容器。
 
 代码运行结果：
 
-[img11]()
+![img11](http://www.cywjw99.com/img_el/11.svg)
 
 ## （四）Link链接
 
@@ -315,7 +315,7 @@ el-footer：底栏容器。
 
 代码运行结果：
 
-[img12]()
+![img12](http://www.cywjw99.com/img_el/12.svg)
 
 # Form
 
@@ -349,7 +349,7 @@ el-footer：底栏容器。
 
 代码运行结果：
 
-[img13]()
+![img13](http://www.cywjw99.com/img_el/13.svg)
 
 ## （二）Checkbox复选框
 
@@ -383,7 +383,7 @@ el-footer：底栏容器。
 
 代码运行结果：
 
-[img14]()
+![img14](http://www.cywjw99.com/img_el/14.svg)
 
 ## （三）Input输入框
 
@@ -413,7 +413,7 @@ el-footer：底栏容器。
 
 代码输出结果：
 
-[img15]()
+![img15](http://www.cywjw99.com/img_el/15.svg)
 
 ### 密码框
 
@@ -435,7 +435,7 @@ el-footer：底栏容器。
 
 代码输出结果：
 
-[img16]()
+![img16](http://www.cywjw99.com/img_el/16.svg)
 
 ps:这部分有很多其他的功能，笔者就不一一总结了，可以去[Input的使用](https://element.eleme.io/?ref=madewithvuejs.com#/zh-CN/component/input)
 详细了解
@@ -470,7 +470,7 @@ ps:这部分有很多其他的功能，笔者就不一一总结了，可以去[I
 
 代码运行结果：
 
-[img17]()
+![img17](http://www.cywjw99.com/img_el/17.svg)
 
 ## （五）Select下拉菜单
 
@@ -521,4 +521,4 @@ ps:这部分有很多其他的功能，笔者就不一一总结了，可以去[I
 
 代码运行结果：
 
-[img18]()
+![img18](http://www.cywjw99.com/img_el/18.svg)
