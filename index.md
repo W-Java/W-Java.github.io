@@ -2,6 +2,8 @@
 
 ![img_JavaW](img/JavaW.png)
 
+#### [**查看我的个人简历**]()
+
 ## How to use?
 
 * ### Archives :
