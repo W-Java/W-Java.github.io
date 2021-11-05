@@ -2,7 +2,7 @@
 layout: post
 title:  "【个人总结】数字货币的前景和个人理解"
 categories: 
-tags:  区块链
+tags:  信安 区块链
 ---
 
 * content
