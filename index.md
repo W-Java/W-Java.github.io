@@ -2,7 +2,7 @@
 
 ![img_JavaW](img/JavaW.png)
 
-#### [**查看我的个人简历**]()
+#### [**查看我的个人简历**](_password/curriculum_vitae.html)
 
 ## How to use?
 
