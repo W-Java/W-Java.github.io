@@ -1229,7 +1229,7 @@ touch HelloWorld/server.py
 &lt;head&gt;
     &lt;title&gt;
     
-        {% if page_title %}
+        { if page_title }
             {<!-- -->{ page_title }}
         {% endif %}
     &lt;/title&gt;
