@@ -1224,19 +1224,19 @@ touch HelloWorld/server.py
 
 内容如下：
 
-```
+```xpath
 &lt;html&gt;
 &lt;head&gt;
     &lt;title&gt;
     
-        `{% if page_title %}`
-            `{<!-- -->{ page_title }}`
-        `{% endif %}`
+        {% if page_title %}
+            {<!-- -->{ page_title }}
+        {% endif %}
     &lt;/title&gt;
 &lt;/head&gt;
 
 &lt;body&gt;
-    `{% block body %}{% endblock %}`
+    {% block body %}{% endblock %}
 
 
 ```
