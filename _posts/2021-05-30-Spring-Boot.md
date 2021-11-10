@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "【个人总结】Java"
+title:  "【个人总结】SpringBoot"
 categories:  SpringBoot
 tags:  总结
 ---
