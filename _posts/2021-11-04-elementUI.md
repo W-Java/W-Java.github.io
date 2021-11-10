@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "【个人总结】ElementUI的使用总结"
-categories: vue ElementUI
+categories: Vue ElementUI
 tags:  实战 总结
 ---
 
