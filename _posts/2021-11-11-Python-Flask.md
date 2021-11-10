@@ -2,7 +2,7 @@
 layout: post
 title:  "【个人总结】Python Flask总结"
 categories:  Python Flask
-tags: 总结
+tags:  总结
 ---
 
 * content
