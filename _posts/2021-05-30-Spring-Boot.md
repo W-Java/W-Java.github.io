@@ -20,6 +20,7 @@ Spring Boot 是 Spring 开源组织下的子项目，是 Spring 组件一站式�
 
 Spring Boot 主要有如下优点：
 1. 容易上手，提升开发效率，为 Spring 开发提供一个更快、更广泛的入门体验。1. 开箱即用，远离繁琐的配置。1. 提供了一系列大型项目通用的非业务性功能，例如：内嵌服务器、安全管理、运行数据监控、运行状况检查和外部化配置等。1. 没有代码生成，也不需要XML配置。1. 避免大量的 Maven 导入和各种版本冲突。
+
 ### Spring Boot 的核心注解是哪个？它主要由哪几个注解组成的？
 
 启动类上面的注解是@SpringBootApplication，它也是 Spring Boot 的核心注解，主要组合包含了以下 3 个注解：
@@ -86,6 +87,7 @@ Spring Boot 推荐使用 Java 配置而非 XML 配置，但是 Spring Boot 中�
 
 spring boot 核心的两个配置文件：
 - bootstrap (. yml 或者 . properties)：boostrap 由父 ApplicationContext 加载的，比 applicaton 优先加载，配置在应用程序上下文的引导阶段生效。一般来说我们在 Spring Cloud Config 或者 Nacos 中会用到它。且 boostrap 里面的属性不能被覆盖；- application (. yml 或者 . properties)： 由ApplicatonContext 加载，用于 spring boot 项目的自动化配置。
+
 ### 什么是 Spring Profiles？
 
 Spring Profiles 允许用户根据配置文件（dev，test，prod 等）来注册 bean。因此，当应用程序在开发中运行时，只有某些 bean 可以加载，而在 PRODUCTION中，某些其他 bean 可以加载。假设我们的要求是 Swagger 文档仅适用于 QA 环境，并且禁用所有其他文档。这可以使用配置文件来完成。Spring Boot 使得使用配置文件非常简单。
@@ -104,6 +106,7 @@ Spring Profiles 允许用户根据配置文件（dev，test，prod 等）来注�
 
 由于 Spring Boot 官方提供了大量的非常方便的开箱即用的 Starter ，包括 Spring Security 的 Starter ，使得在 Spring Boot 中使用 Spring Security 变得更加容易，甚至只需要添加一个依赖就可以保护所有的接口，所以，如果是 Spring Boot 项目，一般选择 Spring Security 。当然这只是一个建议的组合，单纯从技术上来说，无论怎么组合，都是没有问题的。Shiro 和 Spring Security 相比，主要有如下一些特点：
 1. Spring Security 是一个重量级的安全管理框架；Shiro 则是一个轻量级的安全管理框架1. Spring Security 概念复杂，配置繁琐；Shiro 概念简单、配置简单1. Spring Security 功能强大；Shiro 功能简单
+
 ### Spring Boot 中如何解决跨域问题 ?
 
 跨域可以在前端通过 JSONP 来解决，但是 JSONP 只可以发送 GET 请求，无法发送其他类型的请求，在 RESTful 风格的应用中，就显得非常鸡肋，因此我们推荐在后端通过 （CORS，Cross-origin resource sharing） 来解决跨域问题。这种解决方案并非 Spring Boot 特有的，在传统的 SSM 框架中，就可以通过 CORS 来解决跨域问题，只不过之前我们是在 XML 文件中配置 CORS ，现在可以通过实现WebMvcConfigurer接口然后重写addCorsMappings方法解决跨域问题。
@@ -244,7 +247,14 @@ spring-boot-starter-security
 ### spring-boot-starter-parent 有什么用 ?
 
 我们都知道，新创建一个 Spring Boot 项目，默认都是有 parent 的，这个 parent 就是 spring-boot-starter-parent ，spring-boot-starter-parent 主要有如下作用：
-1. 定义了 Java 编译版本为 1.8 。1. 使用 UTF-8 格式编码。1. 继承自 spring-boot-dependencies，这个里边定义了依赖的版本，也正是因为继承了这个依赖，所以我们在写依赖时才不需要写版本号。1. 执行打包操作的配置。1. 自动化的资源过滤。1. 自动化的插件配置。1. 针对 application.properties 和 application.yml 的资源过滤，包括通过 profile 定义的不同环境的配置文件，例如 application-dev.properties 和 application-dev.yml。
+
+1. 定义了 Java 编译版本为 1.8 。1. 使用 UTF-8 格式编码。
+2. 继承自 spring-boot-dependencies，这个里边定义了依赖的版本，也正是因为继承了这个依赖，所以我们在写依赖时才不需要写版本号。
+3. 执行打包操作的配置。
+4. 自动化的资源过滤。
+5. 自动化的插件配置。
+6. 针对 application.properties 和 application.yml 的资源过滤，包括通过 profile 定义的不同环境的配置文件，例如 application-dev.properties 和 application-dev.yml。
+
 ### Spring Boot 打成的 jar 和普通的 jar 有什么区别 ?
 
 Spring Boot 项目最终打包成的 jar 是可执行 jar ，这种 jar 可以直接通过 `java -jar xxx.jar` 命令来运行，这种 jar 不可以作为普通的 jar 被其他项目依赖，即使依赖了也无法使用其中的类。
