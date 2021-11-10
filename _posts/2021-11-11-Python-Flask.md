@@ -1220,7 +1220,7 @@ touch HelloWorld/server.py
 
 ```
 
-### 11.2 创建并编辑HelloWorld/templates/default.html
+### 10.2 创建并编辑HelloWorld/templates/default.html
 
 内容如下：
 
@@ -1243,28 +1243,28 @@ touch HelloWorld/server.py
 
 可以看到，在``标签中使用了if判断，如果给模板传递了`page_title`变量，显示之，否则，不显示。
 
-``标签中定义了一个名为`body`的block，用来被其他模板文件继承。
+标签中定义了一个名为`body`的block，用来被其他模板文件继承。
 
-### 11.3 创建并编辑HelloWorld/templates/user_info.html
+### 10.3 创建并编辑HelloWorld/templates/user_info.html
 内容如下：
 
 ```xpath
-{% extends "default.html" %}
+{ extends "default.html" }
 
-{% block body %}
-    {% for key in user_info %}
+{ block body }
+    { for key in user_info }
 
-        {<!-- -->{ key }}: {<!-- -->{ user_info[key] }} 
+        {{ key }}: {{ user_info[key] }} 
 
 
-    {% endfor %}
-{% endblock %}
+    { endfor }
+{ endblock }
 
 ```
 
 变量`user_info`应该是一个字典，for循环用来循环输出键值对。
 
-### 11.4 编辑HelloWorld/server.py
+### 10.4 编辑HelloWorld/server.py
 
 内容如下：
 
@@ -1297,7 +1297,7 @@ if __name__ == '__main__':
 
 `render_template()`函数的第一个参数指定模板文件，后面的参数是要传递的数据。
 
-### 11.5 运行与测试
+### 10.5 运行与测试
 
 运行HelloWorld/server.py：
 
@@ -1312,7 +1312,7 @@ $ python3 HelloWorld/server.py
 
 查看网页源码：
 
-```
+```xpath
 &lt;html&gt;
 &lt;head&gt;
     &lt;title&gt;
@@ -1329,15 +1329,13 @@ $ python3 HelloWorld/server.py
 
 ```
 
-### 11.6 本节源码
 
 
-
-## 12. 自定义404等错误的响应
+## 11. 自定义404等错误的响应
 
 要处理HTTP错误，可以使用`flask.abort`函数。
 
-### 12.1 示例1：简单入门
+### 11.1 示例1：简单入门
 
 建立Flask项目
 
@@ -1385,7 +1383,7 @@ if __name__ == '__main__':
 
 要注意的是，`HelloWorld/server.py`中`abort(401)`后的`print`并没有执行。
 
-### 12.2 示例2：自定义错误页面
+### 11.2 示例2：自定义错误页面
 
 代码
 
@@ -1419,23 +1417,16 @@ if __name__ == '__main__':
 
 `page_unauthorized`函数返回的是一个元组，401 代表HTTP 响应状态码。如果省略401，则响应状态码会变成默认的 200。
 
-效果
-
-运行`HelloWorld/server.py`，浏览器访问`http://127.0.0.1:5000/user`，效果如下：
 
 
 
-### 12.3 本节源码
-
-
-
-## 13. 用户会话
+## 12. 用户会话
 
 session用来记录用户的登录状态，一般基于cookie实现。
 
 下面是一个简单的示例。
 
-### 13.1 建立Flask项目
+### 12.1 建立Flask项目
 
 按照以下命令建立Flask项目HelloWorld:
 
@@ -1447,7 +1438,7 @@ touch HelloWorld/server.py
 
 ```
 
-### 13.2 编辑`HelloWorld/server.py`
+### 12.2 编辑`HelloWorld/server.py`
 
 内容如下：
 
@@ -1499,7 +1490,7 @@ if __name__ == '__main__':
 
 ```
 
-### 13.3 代码的含义
+### 12.3 代码的含义
 
 `app.secret_key`用于给session加密。
 
@@ -1511,13 +1502,13 @@ if __name__ == '__main__':
 
 另外，使用`redirect()`重定向时，一定要在前面加上`return`。
 
-### 13.4 效果
+### 12.4 效果
 
 进入`http://127.0.0.1:5000/login`，输入name，点击submit：
 
-进入`http://127.0.0.1:5000/show`查看session中存储的name：  
+进入`http://127.0.0.1:5000/show`查看session中存储的name： 
 
-### 13.5 设置sessin的有效时间
+### 12.5 设置sessin的有效时间
 
 下面这段代码来自：
 
@@ -1532,17 +1523,14 @@ app.permanent_session_lifetime = timedelta(minutes=5)
 
 这段代码将session的有效时间设置为5分钟。
 
-### 13.6 本节源码
 
+## 13. 使用Cookie
 
-
-## 14. 使用Cookie
-
-Cookie是存储在客户端的记录访问者状态的数据。具体原理，请见  。 常用的用于记录用户登录状态的session大多是基于cookie实现的。
+Cookie是存储在客户端的记录访问者状态的数据。常用的用于记录用户登录状态的session大多是基于cookie实现的。
 
 cookie可以借助`flask.Response`来实现。下面是一个示例。
 
-### 14.1 建立Flask项目
+### 13.1 建立Flask项目
 
 按照以下命令建立Flask项目HelloWorld:
 
@@ -1554,7 +1542,7 @@ touch HelloWorld/server.py
 
 ```
 
-### 14.2 代码
+### 13.2 代码
 
 修改`HelloWorld/server.py`：
 
@@ -1618,19 +1606,27 @@ res.set_cookie('name', '', expires=0)
 >Sets a cookie. The parameters are the same as in the cookie Morsel object in the Python standard library but it accepts unicode data, too. Parameters: 
 
 
->     key – the key (name) of the cookie to be set.      value – the value of the cookie.      max_age – should be a number of seconds, or None (default) if the cookie should last only as long as the client’s browser session. 
+> key – the key (name) of the cookie to be set. 
+ 
+ 
+
+>value – the value of the cookie. 
 
 
->     expires – should be a datetime object or UNIX timestamp. 
+
+> max_age – should be a number of seconds, or None (default) if the cookie should last only as long as the client’s browser session. 
 
 
->     domain – if you want to set a cross-domain cookie. For example, domain=”.example.com” will set a cookie that is readable by the domain , foo.example.com etc. Otherwise, a cookie will only be readable by the domain that set it. 
+> expires – should be a datetime object or UNIX timestamp. 
 
 
->     path – limits the cookie to a given path, per default it will span the whole domain. 
+> domain – if you want to set a cross-domain cookie. For example, domain=”.example.com” will set a cookie that is readable by the domain , foo.example.com etc. Otherwise, a cookie will only be readable by the domain that set it. 
 
 
-### 14.3 运行与测试
+> path – limits the cookie to a given path, per default it will span the whole domain. 
+
+
+### 13.3 运行与测试
 
 运行`HelloWorld/server.py`：
 
@@ -1662,17 +1658,13 @@ Set-Cookie: name=letian; Expires=Sun, 29-Jun-2014 05:16:27 GMT; Path=/
 
 ```
 
-### 14.4 本节源码
-
-
-
-## 15. 闪存系统 flashing system
+## 14. 闪存系统 flashing system
 
 Flask的闪存系统（flashing system）用于向用户提供反馈信息，这些反馈信息一般是对用户上一次操作的反馈。反馈信息是存储在服务器端的，当服务器向客户端返回反馈信息后，这些反馈信息会被服务器端删除。
 
 下面是一个示例。
 
-### 15.1 建立Flask项目
+### 14.1 建立Flask项目
 
 按照以下命令建立Flask项目HelloWorld:
 
@@ -1684,7 +1676,7 @@ touch HelloWorld/server.py
 
 ```
 
-### 15.2 编写HelloWorld/server.py
+### 14.2 编写HelloWorld/server.py
 
 内容如下：
 
@@ -1723,7 +1715,7 @@ if __name__ == "__main__":
 
 ```
 
-### 15.3 效果
+### 14.3 效果
 
 运行服务器：
 
@@ -1776,7 +1768,7 @@ cookie中`session`发生了变化，新的内容是：
 
 ```
 
-### 15.4 高级用法
+### 14.4 高级用法
 
 flash系统也支持对flash的内容进行分类。修改`HelloWorld/server.py`内容：
 
@@ -1838,14 +1830,7 @@ access at 1404022326.39
 
 ```
 
-### 15.5 在模板文件中获取flash的内容
+### 14.5 在模板文件中获取flash的内容
 
 在Flask中，`get_flashed_messages()`默认已经集成到`Jinja2`模板引擎中，易用性很强。下面是来自官方的一个示例：
-
-
-
-### 15.6 本节源码
-
-
-
 
