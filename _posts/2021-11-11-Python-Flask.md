@@ -1230,13 +1230,13 @@ touch HelloWorld/server.py
     &lt;title&gt;
     
         { if page_title }
-            {<!-- -->{ page_title }}
-        {% endif %}
+            {{ page_title }}
+        { endif }
     &lt;/title&gt;
 &lt;/head&gt;
 
 &lt;body&gt;
-    {% block body %}{% endblock %}
+    { block body }{ endblock }
 
 
 ```
