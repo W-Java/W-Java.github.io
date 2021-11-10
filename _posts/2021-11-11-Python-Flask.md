@@ -10,15 +10,10 @@ tags:  总结
 
 
 #Python Flask Web 框架入门
-Flask是一个轻量级的基于Python的web框架。
 
-本文适合有一定HTML、Python、网络基础的同学阅读。
+笔者总结最近学习Flask的一些知识
 
-## 1. 简介
-
-这份文档中的代码使用 Python 3 运行。 是的，所以读者需要自己在电脑上安装Python 3 和 pip3。建议安装最新版本，我使用的是`Python 3.6.4`。 安装方法，可以自行谷歌或者百度。 建议在 linux 下实践本教程中命令行操作、执行代码。
-
-## 2. 安装
+## 1. 安装
 
 通过pip3安装Flask即可：
 
@@ -48,11 +43,11 @@ $ python3
 
 ```
 
-## 3. 从 Hello World 开始
+## 2. 从 Hello World 开始
 
-本节主要内容：使用Flask写一个显示”Hello World!”的web程序，如何配置、调试Flask。
+使用Flask写一个显示”Hello World!”的web程序
 
-### 3.1 Hello World
+### 2.1 Hello World
 
 按照以下命令建立Flask项目HelloWorld:
 
@@ -104,13 +99,13 @@ def hello_world():
 
 当客户端访问`/`时，将响应`hello_world()`函数返回的内容。注意，这不是返回`Hello World!`这么简单，`Hello World!`只是HTTP响应报文的实体部分，状态码等信息既可以由Flask自动处理，也可以通过编程来制定。
 
-### 3.2 修改Flask的配置
+### 2.2 修改Flask的配置
 
 ```xpath
 app = Flask(__name__)
 ```
 
-上面的代码中，python内置变量`__name__`的值是字符串`__main__` 。Flask类将这个参数作为程序名称。当然这个是可以自定义的，比如`app = Flask("my-app")`。
+上面的代码中，python内置变量`__name__`的值是字符串`__main__`。Flask类将这个参数作为程序名称。当然这个是可以自定义的，比如`app = Flask("my-app")`。
 
 Flask默认使用`static`目录存放静态资源，`templates`目录存放模板，这是可以通过设置参数更改的：
 
@@ -127,7 +122,7 @@ print(Flask.__doc__)
 
 ```
 
-### 3.3 调试模式
+### 2.3 调试模式
 
 上面的server.py中以`app.run()`方式运行，这种方式下，如果服务器端出现错误是不会在客户端显示的。但是在开发环境中，显示错误信息是很有必要的，要显示错误信息，应该以下面的方式运行Flask：
 
@@ -138,7 +133,7 @@ app.run(debug=True)
 
 将`debug`设置为`True`的另一个好处是，程序启动后，会自动检测源码是否发生变化，若有变化则自动重启程序。这可以帮我们省下很多时间。
 
-### 3.4 绑定IP和端口
+### 2.4 绑定IP和端口
 
 默认情况下，Flask绑定IP为`127.0.0.1`，端口为`5000`。我们也可以通过下面的方式自定义：
 
@@ -156,19 +151,17 @@ $ sudo python3 server.py
 
 ```
 
-### 3.5 本节源码
 
 
-
-## 4. 获取 URL 参数
+## 3. 获取 URL 参数
 
 URL参数是出现在url中的键值对，例如`http://127.0.0.1:5000/?disp=3`中的url参数是`{'disp':3}`。
 
-### 4.1 建立Flask项目
+### 3.1 建立Flask项目
 
 按照以下命令建立Flask项目HelloWorld:
 
-```xpath
+```shell
 mkdir HelloWorld
 mkdir HelloWorld/static
 mkdir HelloWorld/templates
@@ -176,7 +169,7 @@ touch HelloWorld/server.py
 
 ```
 
-### 4.2 列出所有的url参数
+### 3.2 列出所有的url参数
 
 在server.py中添加以下内容：
 
@@ -238,7 +231,7 @@ if __name__ == '__main__':
 
 ```
 
-### 4.3 获取某个指定的参数
+### 3.3 获取某个指定的参数
 
 例如，要获取键`info`对应的值，如下修改`server.py`：
 
@@ -263,9 +256,7 @@ hello
 
 ```
 
-不过，当我们访问`http://127.0.0.1:5000/`时候却出现了500错误，浏览器显示：  
-
-如果开启了Debug模式，会显示：  
+不过，当我们访问`http://127.0.0.1:5000/`时候却出现了500错误
 
 为什么为这样？
 
@@ -316,9 +307,11 @@ hi
 
 ```
 
-### 4.4 如何处理多值
+### 3.4 如何处理多值
 
-还记得上面有一次请求是这样的吗？ `http://127.0.0.1:5000/?user=Flask&amp;time&amp;p=7&amp;p=8`，仔细看下，`p`有两个值。
+还记得上面有一次请求是这样的吗？
+
+`http://127.0.0.1:5000/?user=Flask&amp;time&amp;p=7&amp;p=8`，仔细看下，`p`有两个值。
 
 如果我们的代码是：
 
@@ -358,17 +351,13 @@ if __name__ == '__main__':
 
 ```
 
-浏览器输入 `http://127.0.0.1:5000/?user=Flask&amp;time&amp;p=7&amp;p=8`，我们会看到`['7', '8']`。
-
-### 4.5 本节源码
+浏览器输入`http://127.0.0.1:5000/?user=Flask&amp;time&amp;p=7&amp;p=8`，我们会看到`['7', '8']`。
 
 
 
-## 5. 获取POST方法传送的数据
+## 4. 获取POST方法传送的数据
 
 作为一种HTTP请求方法，POST用于向指定的资源提交要被处理的数据。我们在某网站注册用户、写文章等时候，需要将数据传递到网站服务器中。并不适合将数据放到URL参数中，密码放到URL参数中容易被看到，文章数据又太多，浏览器不一定支持太长长度的URL。这时，一般使用POST方法。
-
-本文使用python的requests库模拟浏览器。
 
 安装方法：
 
@@ -377,7 +366,7 @@ $ sudo pip3 install requests
 
 ```
 
-### 5.1 建立Flask项目
+### 4.1 建立Flask项目
 
 按照以下命令建立Flask项目HelloWorld:
 
@@ -389,7 +378,7 @@ touch HelloWorld/server.py
 
 ```
 
-### 5.2 查看POST数据内容
+### 4.2 查看POST数据内容
 
 以用户注册为例子，我们需要向服务器`/register`传送用户名`name`和密码`password`。如下编写`HelloWorld/server.py`。
 
@@ -467,7 +456,7 @@ b'name=letian&amp;password=123'
 
 ```
 
-### 5.3 解析POST数据
+### 4.3 解析POST数据
 
 上面，我们看到post的数据内容是：
 
@@ -562,15 +551,12 @@ print(r.text)
 
 ```
 
-### 5.4 本节源码
 
+## 5. 处理和响应JSON数据
 
+使用 HTTP POST 方法传到网站服务器的数据格式可以有很多种，比如`name=letian&amp;password=123`这种用过`&amp;`符号分割的key-value键值对格式。我们也可以用JSON格式、XML格式。相比XML的重量、规范繁琐，JSON显得非常小巧和易用。
 
-## 6. 处理和响应JSON数据
-
-使用 HTTP POST 方法传到网站服务器的数据格式可以有很多种，比如「5. 获取POST方法传送的数据」讲到的`name=letian&amp;password=123`这种用过`&amp;`符号分割的key-value键值对格式。我们也可以用JSON格式、XML格式。相比XML的重量、规范繁琐，JSON显得非常小巧和易用。
-
-### 6.1 建立Flask项目
+### 5.1 建立Flask项目
 
 按照以下命令建立Flask项目HelloWorld:
 
@@ -582,7 +568,7 @@ touch HelloWorld/server.py
 
 ```
 
-### 6.2 处理JSON格式的请求数据
+### 5.2 处理JSON格式的请求数据
 
 如果POST的数据是JSON格式，`request.json`会自动将json数据转换成Python类型（字典或者列表）。
 
@@ -626,14 +612,14 @@ print(r.text)
 
 ```
 
-运行`server.py`，然后运行`client.py`，`client.py` 会在终端输出：
+运行`server.py`，然后运行`client.py`，`client.py`会在终端输出：
 
 ```
 3
 
 ```
 
-`server.py` 会在终端输出：
+`server.py`会在终端输出：
 
 ```shell
 Host: 127.0.0.1:5000
@@ -652,7 +638,7 @@ Content-Type: application/json
 
 注意，请求头中`Content-Type`的值是`application/json`。
 
-### 6.3 响应JSON-方案1
+### 5.3 响应JSON-方案1
 
 响应JSON时，除了要把响应体改成JSON格式，响应头的`Content-Type`也要设置为`application/json`。
 
@@ -727,7 +713,7 @@ def add():
 
 ```
 
-### 6.4 响应JSON-方案2
+### 5.4 响应JSON-方案2
 
 使用 jsonify 工具函数即可。
 
@@ -753,15 +739,14 @@ if __name__ == '__main__':
 
 ```
 
-### 6.5 本节源码
 
 
 
-## 7. 上传文件
+## 6. 上传文件
 
 上传文件，一般也是用POST方法。
 
-### 7.1 建立Flask项目
+### 6.1 建立Flask项目
 
 按照以下命令建立Flask项目HelloWorld:
 
@@ -773,7 +758,7 @@ touch HelloWorld/server.py
 
 ```
 
-### 7.2 上传文件
+### 6.2 上传文件
 
 这一部分的代码参考自。
 
@@ -876,15 +861,13 @@ file_content = request.files['image'].stream.read()
 
 ```
 
-### 7.3 本节源码
 
 
-
-## 8. Restful URL
+## 7. Restful URL
 
 简单来说，Restful URL可以看做是对 URL 参数的替代。
 
-### 8.1 建立Flask项目
+### 7.1 建立Flask项目
 
 按照以下命令建立Flask项目HelloWorld:
 
@@ -896,7 +879,7 @@ touch HelloWorld/server.py
 
 ```
 
-### 8.2 编写代码
+### 7.2 编写代码
 
 编辑server.py：
 
@@ -955,7 +938,7 @@ letian
 
 ```
 
-### 8.3 转换类型
+### 7.3 转换类型
 
 由上面的示例可以看出，使用 Restful URL 得到的变量默认为str对象。如果我们需要通过分页显示查询结果，那么需要在url中有数字来指定页数。按照上面方法，可以在获取str类型页数变量后，将其转换为int类型。不过，还有更方便的方法，就是用flask内置的转换机制，即在route中指定该如何转换。
 
@@ -1007,7 +990,7 @@ path     like the default but also accepts slashes
 
 看起来够用了。
 
-### 8.4 一个有趣的用法
+### 7.4 一个有趣的用法
 
 如下编写服务器代码：
 
@@ -1042,7 +1025,7 @@ if __name__ == '__main__':
 
 ```
 
-### 8.5 编写转换器
+### 7.5 编写转换器
 
 自定义的转换器是一个继承`werkzeug.routing.BaseConverter`的类，修改`to_python`和`to_url`方法即可。`to_python`方法用于将url中的变量转换后供被`包装的函数使用，`to_url`方法用于`flask.url_for`中的参数转换。
 
@@ -1095,19 +1078,12 @@ if __name__ == '__main__':
 
 ```
 
-### 8.6 本节源码
 
-
-
-### 8.7 值得读
-
-。
-
-## 9. 使用`url_for`生成链接
+## 8. 使用`url_for`生成链接
 
 工具函数`url_for`可以让你以软编码的形式生成url，提供开发效率。
 
-### 9.1 建立Flask项目
+### 8.1 建立Flask项目
 
 按照以下命令建立Flask项目HelloWorld:
 
@@ -1119,7 +1095,7 @@ touch HelloWorld/server.py
 
 ```
 
-### 9.2 编写代码
+### 8.2 编写代码
 
 编辑`HelloWorld/server.py`：
 
@@ -1163,15 +1139,14 @@ if __name__ == '__main__':
 
 ```
 
-### 9.3 本节源码
 
 
 
-## 10. 使用redirect重定向网址
+## 9. 使用redirect重定向网址
 
 `redirect`函数用于重定向，实现机制很简单，就是向客户端（浏览器）发送一个重定向的HTTP报文，浏览器会去访问报文中指定的url。
 
-### 10.1 建立Flask项目
+### 9.1 建立Flask项目
 
 按照以下命令建立Flask项目HelloWorld:
 
@@ -1183,7 +1158,7 @@ touch HelloWorld/server.py
 
 ```
 
-### 10.2 编写代码
+### 9.2 编写代码
 
 使用`redirect`时，给它一个字符串类型的参数就行了。
 
@@ -1220,21 +1195,20 @@ this is test2
 
 ```
 
-### 10.3 本节源码
 
-
-
-## 11. 使用Jinja2模板引擎
+## 10. 使用Jinja2模板引擎
 
 模板引擎负责MVC中的V（view，视图）这一部分。Flask默认使用Jinja2模板引擎。
 
 Flask与模板相关的函数有：
-- flask.render_template(template_name_or_list, **context) Renders a template from the template folder with the given context.- flask.render_template_string(source, **context) Renders a template from the given template source string with the given context.- flask.get_template_attribute(template_name, attribute) Loads a macro (or variable) a template exports. This can be used to invoke a macro from within Python code.
+- flask.render_template(template_name_or_list, **context) Renders a template from the template folder with the given context.
+
+- flask.render_template_string(source, **context) Renders a template from the given template source string with the given context.- flask.get_template_attribute(template_name, attribute) Loads a macro (or variable) a template exports. This can be used to invoke a macro from within Python code.
 这其中常用的就是前两个函数。
 
 这个实例中使用了模板继承、if判断、for循环。
 
-### 11.1 建立Flask项目
+### 10.1 建立Flask项目
 
 按照以下命令建立Flask项目HelloWorld:
 
@@ -1255,14 +1229,14 @@ touch HelloWorld/server.py
 &lt;head&gt;
     &lt;title&gt;
     
-        {% if page_title %}
-            {<!-- -->{ page_title }}
-        {% endif %}
+        `{% if page_title %}`
+            `{<!-- -->{ page_title }}`
+        `{% endif %}`
     &lt;/title&gt;
 &lt;/head&gt;
 
 &lt;body&gt;
-    {% block body %}{% endblock %}
+    `{% block body %}{% endblock %}`
 
 
 ```
