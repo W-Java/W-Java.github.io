@@ -9,9 +9,9 @@ tags:  总结
 {:toc}
 
 
-#Python Flask Web 框架入门
+# Python Flask Web 框架入门
 
-笔者总结最近学习Flask的一些知识
+笔者来总结一下最近学习Flask的一些知识
 
 ## 1. 安装
 
