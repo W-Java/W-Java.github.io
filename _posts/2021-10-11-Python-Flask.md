@@ -23,7 +23,7 @@ $ sudo pip3 install Flask
 
 进入python交互模式看下Flask的介绍和版本：
 
-```shell
+```xpath
 $ python3
 
 &gt;&gt;&gt; import flask
