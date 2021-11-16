@@ -45,40 +45,40 @@ tags: 总结
 
 我：嗯嗯好
 
-面试官：
+开始了我的死亡时刻。。。
 
-发现了这样一个bug
+面试官：说一说css的样式选择器都有哪些？
 
-# 报错信息
+我：嗯....我记得有'.'和'#'分别代表了选择类（class）和选择id
 
-![img1](http://www.cywjw99.com/img_vue_bug/1.svg)
+面试官：还有没有别的选择器了？
 
-> Component template should contain exactly one root element
+我：嗯...暂时想不到了（感觉自己这个问题已经凉凉、确实没想到会问css,结果这么简单到东西也答不上来）
 
-# 错误翻译
+面试官：你刚才说的是类选择器（.）和id选择器（#），还有最基本的标签选择器、派生选择器、组合选择器
 
-对于这个bug，我们很容易翻译为：
+我：啊我去，我忘记说标签选择器了，因为那个是最基本的
 
-**组件模板应该只包含一个根元素**
+面试官：那你能说说，这几种选择器的优先级关系吗？
 
-# 查看代码
+我：嗯..!important>内联样式>ID>class>标签
 
-我们找到对应bug的代码：
+面试官：ok下一个问题
 
-![img2](http://www.cywjw99.com/img_vue_bug/2.svg)
+[这个问题的详解](https://blog.csdn.net/qq_20179227/article/details/99705961?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522163707984516780269852849%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=163707984516780269852849&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~baidu_landing_v2~default-4-99705961.first_rank_v2_pc_rank_v29&utm_term=css%E7%9A%84%E6%A0%B7%E5%BC%8F%E9%80%89%E6%8B%A9%E5%99%A8&spm=1018.2226.3001.4187)
 
-# 错误分析
+面试官：现在有这样一个需求，让一个button无论在界面如何放大/缩小，都可以在界面的最中下部进行显示，如何用css进行实现？
 
-根据Vue的单root模式可知，template下面包含了两个div根节点，这是报错的根本原因。
+我：（这个问题，我觉得有很多种方法，当时有点紧张就只实现了几种不太好的）我想到了可以使用浮动、或者使用flex布局、或者使用calc()方法进行计算
 
-# 解决
+面试官：calc()并不是一个好的办法，这会无缘故的增加项目的负载
 
-在两个div之外包裹一个原生div即可，如图所示：
+我：哦（略显尴尬）没考虑这么多
 
-![img4](http://www.cywjw99.com/img_vue_bug/4.svg)
+面试官：ok那我们来看看js的部分
 
-# 编译运行
+[这个问题的详解](https://blog.csdn.net/qq_42562636/article/details/99587838?ops_request_misc=&request_id=&biz_id=102&utm_term=%E8%AE%A9%E4%B8%80%E4%B8%AA%E6%8C%89%E9%92%AE%E5%A7%8B%E7%BB%88%E5%9C%A8%E7%95%8C%E9%9D%A2%E7%9A%84%E4%B8%AD%E4%B8%8B%E9%83%A8%E8%BF%9B%E8%A1%8C%E6%98%BE%E7%A4%BA&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-1-99587838.first_rank_v2_pc_rank_v29&spm=1018.2226.3001.4187)
 
-![img3](http://www.cywjw99.com/img_vue_bug/3.svg)
+总结：我是真的没想到会问一些关于css的问题，我还以为会直接跳过html和css直接来进行js以及ES6的提问，这波属实是我大意了
 
-运行成功！
+
