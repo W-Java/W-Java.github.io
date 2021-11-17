@@ -81,4 +81,49 @@ tags: 总结
 
 总结：我是真的没想到会问一些关于css的问题，我还以为会直接跳过html和css直接来进行js以及ES6的提问，这波属实是我大意了
 
+面试官：能说说promise吗？
+
+我：这是一个ES6新增的语法，具体作用是balabala，但是我在项目中并没有实际使用过（感觉这个问题回答的也不是很如意）
+
+[这个问题的详解](https://blog.csdn.net/qq_34645412/article/details/81170576?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522163714902616780255233219%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=163714902616780255233219&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-81170576.first_rank_v2_pc_rank_v29&utm_term=promise&spm=1018.2226.3001.4187)
+
+面试官：说说ES6的新特性吧？
+
+我：我知道的有箭头函数、let和const、for...of等等
+
+[这个问题的详解](https://blog.csdn.net/bradmatt/article/details/80920153?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522163716117116780255232064%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=163716117116780255232064&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-2-80920153.first_rank_v2_pc_rank_v29&utm_term=ES6%E7%9A%84%E6%96%B0%E7%89%B9%E6%80%A7&spm=1018.2226.3001.4187)
+
+面试官：了解过行元素和块元素吗？
+
+我：嗯...听过，不过没有了解过（场面一度陷入到了尴尬的境地）不过这个貌似是html中的内容，不知道为什么放到了js的部分进行了考察
+
+[这个问题的详解](https://blog.csdn.net/qq_42952262/article/details/103834029)
+
+面试官：说说箭头函数的特性吧？
+
+我：箭头函数就是ES6中的一个新的使用方法，他可以让函数的书写变得更简便一些
+
+面试官：这只是其中的最基本的一个，其实箭头函数还有很多特性。比如说：解决了JS中this的问题、没有arguments对象
+
+我：（其实我只知道this的那个，arguments的我真的不知道）
+
+[这个问题的详解](https://blog.csdn.net/weixin_42554311/article/details/82589733?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522163716197416780261928714%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=163716197416780261928714&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-2-82589733.first_rank_v2_pc_rank_v29&utm_term=%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0%E7%9A%84%E4%BC%98%E7%82%B9&spm=1018.2226.3001.4187)
+
+面试官：说一说闭包吧？
+
+我：从什么是闭包，原理，解决的问题，以及存在的问题说了一遍
+
+[这个问题的详解](https://blog.csdn.net/Hunt_bo/article/details/107699137?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522163715667616780274194835%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=163715667616780274194835&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-2-107699137.first_rank_v2_pc_rank_v29&utm_term=%E9%97%AD%E5%8C%85&spm=1018.2226.3001.4187)
+
+面试官：说一说js中改变this指向的函数都有哪些？
+
+我：call apply bind 其中call和apply的区别主要是传参的格式（call是一个一个传、apply则是用数组一整个传）bind是返回一个函数，进行二次调用
+
+[这个问题的详解](https://blog.csdn.net/hexinyu_1022/article/details/82795517?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522163716420616780264033229%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=163716420616780264033229&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-1-82795517.first_rank_v2_pc_rank_v29&utm_term=call%2Capply%2Cbind&spm=1018.2226.3001.4187)
+
+
+
+
+
+
 
