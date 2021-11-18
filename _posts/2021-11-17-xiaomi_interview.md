@@ -82,7 +82,7 @@ _开始了我的死亡时刻。。。_
 
 [这个问题的详解](https://blog.csdn.net/qq_42562636/article/details/99587838?ops_request_misc=&request_id=&biz_id=102&utm_term=%E8%AE%A9%E4%B8%80%E4%B8%AA%E6%8C%89%E9%92%AE%E5%A7%8B%E7%BB%88%E5%9C%A8%E7%95%8C%E9%9D%A2%E7%9A%84%E4%B8%AD%E4%B8%8B%E9%83%A8%E8%BF%9B%E8%A1%8C%E6%98%BE%E7%A4%BA&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-1-99587838.first_rank_v2_pc_rank_v29&spm=1018.2226.3001.4187)
 
-总结：我是真的没想到会问一些关于css的问题，我还以为会直接跳过html和css直接来进行js以及ES6的提问，这波属实是我大意了
+_总结：我是真的没想到会问一些关于css的问题，我还以为会直接跳过html和css直接来进行js以及ES6的提问，这波属实是我大意了_
 
 **面试官：能说说promise吗？**
 
